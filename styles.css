@@ -53,6 +53,7 @@ nav {
   color: var(--secondary-color);
 }
 
+/* Navigation Links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -72,6 +73,37 @@ nav {
 
 .nav-links a:hover {
   color: var(--primary-color);
+}
+
+/* Mobile Navigation Toggle */
+#menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+    background: var(--btn-bg);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  #nav-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    text-align: left;
+    background: var(--header-bg);
+    padding: 20px;
+  }
+  #nav-menu.active {
+    display: flex;
+  }
+  .nav-links li {
+    margin: 10px 0;
+  }
 }
 
 /* Hero Section with Animated Background */
@@ -507,16 +539,8 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Responsive Design */
+/* Responsive Design Adjustments */
 @media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-  }
-  
-  .nav-links li {
-    margin: 10px 0;
-  }
-  
   .hero-content h2 {
     font-size: 2.5rem;
   }

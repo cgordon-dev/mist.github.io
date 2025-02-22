@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Consulting & Services | Transforming Data into Decisions</title>
+  <title>AI Consulting &amp; Services | Transforming Data into Decisions</title>
   <!-- Google Fonts for Modern Typography -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400i&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
@@ -15,7 +15,9 @@
       <div class="logo">
         <h1>AIConsult</h1>
       </div>
-      <ul class="nav-links">
+      <!-- Mobile Navigation Toggle Button -->
+      <button id="menu-toggle" aria-label="Toggle Navigation">☰</button>
+      <ul id="nav-menu" class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Case Studies</a></li>
@@ -198,8 +200,15 @@
   <!-- Optional: Link to FontAwesome for social icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-  <!-- Chatbot Script (for demonstration only) -->
+  <!-- JavaScript for Chatbot and Mobile Navigation -->
   <script>
+    // Mobile Navigation Toggle
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      const navMenu = document.getElementById('nav-menu');
+      navMenu.classList.toggle('active');
+    });
+
+    // Chatbot Toggle
     const chatbotToggle = document.getElementById('chatbot-toggle');
     const chatbotWindow = document.getElementById('chatbot-window');
     const chatbotClose = document.getElementById('chatbot-close');

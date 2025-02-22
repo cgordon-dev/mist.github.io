@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BusinessName | Professional Services</title>
+  <title>AI Consulting & Services | Transforming Data into Decisions</title>
+  <!-- Google Fonts for Modern Typography -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400i&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -11,59 +13,136 @@
   <header>
     <nav>
       <div class="logo">
-        <h1>BusinessName</h1>
+        <h1>AIConsult</h1>
       </div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Case Studies</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#blog">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Section with Animated Background -->
   <section id="home" class="hero">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h2>Welcome to BusinessName</h2>
-      <p>Your trusted partner in professional services.</p>
-      <a href="#contact" class="btn">Get in Touch</a>
+      <h2>Transforming Data into Decisions</h2>
+      <p>Leading AI Consulting &amp; Services for Next-Generation Businesses</p>
+      <a href="#contact" class="btn">Get Started</a>
     </div>
   </section>
 
-  <!-- Main Content -->
-  <main>
-    <!-- Services Section -->
-    <section id="services" class="services">
-      <h2>Our Services</h2>
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our AI Services</h2>
       <div class="service-container">
         <div class="service">
-          <h3>Consulting</h3>
-          <p>Expert advice and strategies to elevate your business.</p>
+          <h3>Machine Learning</h3>
+          <p>Custom ML models to boost your business intelligence.</p>
         </div>
         <div class="service">
-          <h3>Design</h3>
-          <p>Creative and innovative design solutions tailored to your needs.</p>
+          <h3>Natural Language Processing</h3>
+          <p>Advanced NLP solutions to enhance customer engagement.</p>
         </div>
         <div class="service">
-          <h3>Development</h3>
-          <p>Robust and scalable web development services for your business.</p>
+          <h3>Computer Vision</h3>
+          <p>Innovative vision systems for real-time analytics.</p>
+        </div>
+        <div class="service">
+          <h3>Predictive Analytics</h3>
+          <p>Data-driven insights to forecast trends and drive growth.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+  <!-- Portfolio / Case Studies Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2>Case Studies</h2>
+      <div class="portfolio-container">
+        <div class="portfolio-item">
+          <img src="case1.jpg" alt="Retail Analytics Case Study">
+          <div class="portfolio-info">
+            <h3>Retail Analytics</h3>
+            <p>Enhanced customer insights with predictive analytics.</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="case2.jpg" alt="Healthcare Optimization Case Study">
+          <div class="portfolio-info">
+            <h3>Healthcare Optimization</h3>
+            <p>Optimized operations with AI-driven scheduling.</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="case3.jpg" alt="Financial Forecasting Case Study">
+          <div class="portfolio-info">
+            <h3>Financial Forecasting</h3>
+            <p>Improved forecasting accuracy using advanced ML algorithms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-container">
+        <div class="testimonial">
+          <p>"AIConsult transformed our data strategy, leading to a 30% increase in efficiency."</p>
+          <h4>Jane Doe, CEO, RetailCorp</h4>
+        </div>
+        <div class="testimonial">
+          <p>"Their AI solutions helped us unlock hidden insights, driving substantial growth."</p>
+          <h4>John Smith, CTO, HealthPlus</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
       <h2>About Us</h2>
       <p>
-        At BusinessName, we pride ourselves on delivering top-notch services
-        that drive success. With years of industry experience, our team is
-        dedicated to providing personalized solutions that meet your unique needs.
+        At AIConsult, we blend advanced technology with industry expertise to deliver cutting-edge AI solutions that empower businesses to thrive in a data-driven world.
       </p>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+  <!-- Blog/Resources Section -->
+  <section id="blog" class="blog">
+    <div class="container">
+      <h2>Insights &amp; Resources</h2>
+      <div class="blog-container">
+        <article class="blog-post">
+          <img src="blog1.jpg" alt="Blog Post: How AI is Transforming Business Strategy">
+          <h3>How AI is Transforming Business Strategy</h3>
+          <p>Discover the latest trends in AI and how they are reshaping industries.</p>
+          <a href="#">Read More</a>
+        </article>
+        <article class="blog-post">
+          <img src="blog2.jpg" alt="Blog Post: The Future of Machine Learning">
+          <h3>The Future of Machine Learning</h3>
+          <p>Explore the advancements in machine learning and its future potential.</p>
+          <a href="#">Read More</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
       <h2>Contact Us</h2>
       <form action="#" method="post">
         <div class="form-group">
@@ -80,12 +159,58 @@
         </div>
         <button type="submit" class="btn">Send Message</button>
       </form>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <!-- Chatbot Integration (Placeholder) -->
+  <div id="chatbot">
+    <button id="chatbot-toggle" aria-label="Chat with us">Chat</button>
+    <div id="chatbot-window" class="hidden">
+      <div class="chatbot-header">
+        <h3>How can we help?</h3>
+        <button id="chatbot-close" aria-label="Close chat">X</button>
+      </div>
+      <div class="chatbot-body">
+        <p>Welcome to AIConsult! How can we assist you today?</p>
+        <!-- Chat interface goes here -->
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 BusinessName. All rights reserved.</p>
+    <div class="container">
+      <div class="footer-links">
+        <a href="#about">About Us</a>
+        <a href="#blog">Blog</a>
+        <a href="#">Careers</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p>&copy; 2025 AIConsult. All rights reserved.</p>
+    </div>
   </footer>
+
+  <!-- Optional: Link to FontAwesome for social icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Chatbot Script (for demonstration only) -->
+  <script>
+    const chatbotToggle = document.getElementById('chatbot-toggle');
+    const chatbotWindow = document.getElementById('chatbot-window');
+    const chatbotClose = document.getElementById('chatbot-close');
+
+    chatbotToggle.addEventListener('click', () => {
+      chatbotWindow.classList.toggle('hidden');
+    });
+
+    chatbotClose.addEventListener('click', () => {
+      chatbotWindow.classList.add('hidden');
+    });
+  </script>
 </body>
 </html>
